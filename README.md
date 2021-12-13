@@ -3,15 +3,15 @@
 ## TripTrack is an application that lets user keep track of upcoming trips !
 
 - users should be able add the location of a trip
-- users should be able to catogarize the trip
-- user should be able to delete trips
+
+- user should be able to delete and edit trips
 
 | path        | action                                  |
 | ----------- | --------------------------------------- |
 | "/trips"    | renders all the trips in the index page |
 | "/edit"     | edits a trip                            |
 | "/trips/:id | renders the specified trip              |
-| "/add"      | adds a trip                             |
+| "/new"      | adds a trip                             |
 
 ## model
 
@@ -24,17 +24,29 @@ description: String
 
 Header-component
 Footer-component
-main page(maybe)-page
+Home-page
 All trips page-page
 single trip -page
 
-## Technologies
+## Technologies -frontend
 
 - JavaScript
-- Python
 - React
+- React-router-dom
+- React-reveal
+
+## Technologies -backend
+
+- Python
+
 - postgres
 
 ## challanges
 
--
+- I was having a problem with my create route due to the boolean in my backend schema.
+  solution
+
+```
+<option value={true}>true</option>
+          <option value={false}>false</option>
+```
